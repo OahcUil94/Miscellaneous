@@ -1,4 +1,4 @@
-# Crypto 加密 文档
+# Crypto 加密 文档 (Node.js 8.4.0 doc)
 
 [TOC]
 
@@ -34,4 +34,24 @@ try {
   console.log('crypto support is disabled!');
 }
 ```
+
+## Class: Certificate(证书)
+
+初次添加版本: v0.11.8
+
+## crypto模块的方法和属性
+
+### crypto.createCipher(algorithm, password)
+
+初次添加版本: v0.1.94
+
+参数：
+- algorithm <string>
+- password <string> | <Buffer> | <TypedArray> | <DataView>
+
+使用给定的`algorithm`和`password`来创建并返回一个`Cipher`对象
+（Cipher可以认为是计算的意思，根据传入的算法和密钥生成一个算法公式）。
+
+`algorithm`取决于OpenSSL，例如：`aes192`等等，在最近的OpenSSL发布中，`openssl list-cipher-algorithms`将会列出可用的计算算法。
+`password`用于导出计算(cipher)的key以及初始化向量(IV)，该值必须是一个`latin1`编码的`string`类型值，或者是`Buffer`、`TypedArray`、`DataView`。
 
