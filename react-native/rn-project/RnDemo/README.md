@@ -22,8 +22,15 @@ could not resolve png as a file or folder
 肯定是文件名写错了，如果把本地资源使用uri来加载，不论错误还是正确，都不会显示出图片的
 本地资源图片使用require()来加载，网络图片使用uri来加载
 
+0.48版本的RN不能加载.jsx文件
+
 ## vscode中常用的插件
 
 1. 自动补全文件路径：path intellisense
 2. 自动闭合标签：Auto Close Path
 3. 自动补全安装的nodejs模块：Node.js Modules Intellisense
+
+
+
+Mock data
+FlatList的使用

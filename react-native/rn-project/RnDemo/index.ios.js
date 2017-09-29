@@ -5,7 +5,18 @@
  */
 
 import React, { Component } from 'react';
-import TestTabNavigator from './js/TestTabNavigator.js';
+// import TestTabNavigator from './js/TestTabNavigator.js';
+// import TestNavigator from './js/TestNavigator';
+// import BasicApp from './js/navigation/Index';
+// import BasicApp from './js/navigation/index/Index2';
+// import App from './js/navigation/gettingStarted/HelloMobileNavigation';
+// import App from './js/navigation/gettingStarted/nestingNavigators';
+// import App from './js/navigation/navigators/StackNavigatorDemo';
+// Rn只识别js后缀的文件，不识别jsx
+// import App from './js/view/ViewStyle';
+// import App from './js/view/ShowSvgIcon';
+// import App from './js/view/PractialFlexLayout';
+import App from './js/netflix/app';
 import {
   AppRegistry,
   StyleSheet,
@@ -13,27 +24,4 @@ import {
   View
 } from 'react-native';
 
-export default class RnDemo extends Component {
-  render() {
-    return (<TestTabNavigator/>);
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('RnDemo', () => RnDemo);
+AppRegistry.registerComponent('RnDemo', () => App);
