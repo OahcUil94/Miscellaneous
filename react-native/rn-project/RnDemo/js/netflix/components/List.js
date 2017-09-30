@@ -133,7 +133,7 @@ export default class List extends Component {
 
   render() {
     return (
-      <View style={{flex: 1}}>
+      <View>
         <View>
           <Text style={styles.text}>My List</Text>
           <FlatList
