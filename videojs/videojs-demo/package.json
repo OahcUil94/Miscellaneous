@@ -1,0 +1,17 @@
+{
+  "name": "videojs-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "video.js": "^6.2.8",
+    "videojs-contrib-hls": "^5.12.1",
+    "videojs-playbackrate-adjuster": "^1.0.0"
+  }
+}

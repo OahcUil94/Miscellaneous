@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>video.js</title>
+    <link rel="stylesheet" href="./node_modules/video.js/dist/video-js.min.css" />
+</head>
+<body>
+    <video id=example-video width=600 height=300 class="video-js vjs-big-play-centered vjs-default-skin" controls>
+        <source src="http://oc7lv1kwu.bkt.clouddn.com/85d73afe7c9f2d903a755b228aa909aa.mp4" type="video/mp4">
+    </video>   
+<script src="./node_modules/video.js/dist/video.min.js"></script>    
+<script src="./node_modules/videojs-playbackrate-adjuster/dist/browser/videojs-playbackrate-adjuster.min.js"></script>
+<!-- <script src="./node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js"></script> -->
+<script src="./node_modules/video.js/dist/lang/zh-CN.js"></script> 
+<script>
+var player = videojs('example-video', {
+    language: 'zh-CN',
+});
+// 快进的倍数
+
+// 直接播放
+player.muted(true);
+player.play();
+// 暂停
+// player.pause();
+</script>
+</body>
+</html>
